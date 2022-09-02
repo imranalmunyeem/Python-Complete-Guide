@@ -92,3 +92,11 @@
            
            ---> Bitwise operators
 
+## Loop types in Python: 
+           ---> For Loop
+           ---> Here's the general format for a for loop in Python:
+                      for item in object:
+                                  statements to do stuff
+           ---> Example: 
+                      for num in list1:
+                                 print(num)
