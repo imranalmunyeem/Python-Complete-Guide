@@ -129,3 +129,57 @@
                                  if test: 
                                        continue 
                                  else:
+
+## Methods in Python: 
+           ---> Methods perform specific actions on an object and can also take arguments, just like a function.
+           ---> Methods are in the form:
+                     object.method(arg1,arg2,etc..
+           ---> Some methods for a list are:
+                                            append
+                                            count
+                                            extend
+                                            insert
+                                            pop
+                                            remove
+                                            reverse
+                                            sort
+           ---> Example: 
+                      list = [1,2,3,4,5]
+                      list.reverse()
+
+## Function in Python: 
+           ---> Function: Is a useful device that groups together a set of statements so they can be run more than once. They can also let us specify parameters that                   can serve as inputs to the functions. Functions will be one of most basic levels of reusing code in Python, and it will also allow us to start thinking                 of program design (we will dive much deeper into the ideas of design when we learn about Object Oriented Programming).
+           
+           ---> Why should we use functions?
+                Put simply, you should use functions when you plan on using a block of code multiple times. The function will allow you to call the same block of code                 without having to write it multiple times. This in turn will allow you to create more complex Python scripts. To really understand this though, w                       should actually write our own functions.
+            
+           ---> def keyword
+                We begin with def then a space followed by the name of the function. Try to keep names relevant, for example len() is a good name for a length()                       function. Also be careful with names, you wouldn't want to call a function the same name as a built-in function in Python (such as len). 
+                
+           ---> Format: 
+                      def name_of_function(arg1,arg2):
+                           //
+                           This is where the function's Document String (docstring) goes.
+                           When you call help() on your function it will be printed out.
+                            //
+                      // Do stuff here
+                      // Return desired result
+           
+           ---> Example:
+                      def say_hello():
+                      print('hello')
+                      
+           ---> Call the function:
+                      say_hello()
+                      
+           ----> Using return:
+                      def add_num(num1,num2):
+                      return num1+num2
+            
+           ---> Accepting parameters (arguments)
+                      def greeting(name):
+                          print(f'Hello {name}')
+                          greeting('Jose')
+ 
+ ## What is the difference between return and print?
+           ---> The return keyword allows you to actually save the result of the output of a function as a variable. The print() function simply displays the output to                 you, but doesn't save it for future use. 
