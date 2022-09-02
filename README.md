@@ -46,7 +46,7 @@
            
            ---> You can't use reserve keywords.
            
-## Perator types in Python:   
+## Operator types in Python:   
            ---> Arithmetic operators
                       ---> Addittion:       x + y
                       ---> Substraction:    x - y
