@@ -100,3 +100,19 @@
            ---> Example: 
                       for num in list1:
                                  print(num)
+
+           ---> While Loop
+           ---> The general format of a while loop is:
+                      while test:
+                                  code statements
+                      else:
+                                  final code statements
+           ---> Example: 
+                      x = 0
+                      while x < 10:
+                            print('x is currently: ',x)
+                            print(' x is still less than 10, adding 1 to x')
+                            x+=1
+    
+                      else:
+                            print('All Done!')
