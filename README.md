@@ -182,4 +182,16 @@
                           greeting('Jose')
  
  ## What is the difference between return and print?
-           ---> The return keyword allows you to actually save the result of the output of a function as a variable. The print() function simply displays the output to                 you, but doesn't save it for future use. 
+           ---> The return keyword allows you to actually save the result of the output of a function as a variable.The print() function simply displays the output to                 you, but doesn't save it for future use. 
+
+ ## Some useful operatot in Python
+           ---> Range Method: The range function allows you to quickly generate a list of integers.
+           ---> Example: Notice how 11 is not included, up to but not including 11, just like slice notation!
+                      list(range(0,11))
+                      [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+                      
+          ---> enumerate Method: Often, when dealing with iterators, we also get need to keep a count of iterations. Python eases the programmers’ task by providing                                    a built-in function enumerate() for this task. Enumerate() method adds a counter to an iterable and returns it in a form of                                            enumerating object. This enumerated object can then be used directly for loops or converted into a list of tuples using the list()                                      method.
+          ---> Syntax: enumerate(iterable, start=0)
+          
+          ---> Zip Method: Python zip() method takes iterable or containers and returns a single iterator object, having mapped values from all the containers. 
+          ---> Syntax :  zip(*iterators) 
