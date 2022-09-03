@@ -272,3 +272,114 @@
                       ---> Also,  when we do not want to give out sensitive parts of our code implementation and this is where data abstraction came.
 
         
+## Python Exception Handling
+             ---> Exceptions: 
+                      ---> Exceptions are raised when the program is syntactically correct, but the code resulted in an error. This error does not stop the execution                              of the program, however, it changes the normal flow of the program.
+                      ----> Exception Types:
+                                 ---> Exception: Base class for all exceptions
+                                            
+                                 ---> StopIteration: Raised when the next() method of an iterator does not point to any object.
+                                 
+                                 ---> SystemExit: Raised by the sys.exit() function.
+                                 
+                                 ---> StandardError: Base class for all built-in exceptions except StopIteration and SystemExit.
+                                 
+                                 ---> ArithmeticError: Base class for all errors that occur for numeric calculation.
+                                 
+                                 ---> OverflowError: Raised when a calculation exceeds maximum limit for a numeric type.
+                                 
+                                 ---> FloatingPointError: Raised when a floating point calculation fails.
+                                 
+                                 ---> ZeroDivisionError: Raised when division or modulo by zero takes place for all numeric types.
+                                 
+                                 ---> AssertionError: Raised in case of failure of the Assert statement.
+                                 
+                                 ---> AttributeError: Raised in case of failure of attribute reference or assignment.
+                                 
+                                 ---> EOFError: Raised when there is no input from either the raw_input() or input() function and the end of file is reached.
+                                 
+                                 ---> ImportError: Raised when an import statement fails.
+                                 
+                                 ---> KeyboardInterrupt: Raised when the user interrupts program execution, usually by pressing Ctrl+c.
+
+                                 ---> LookupError: Base class for all lookup errors.
+                                 
+                                 ---> IndexError: Raised when an index is not found in a sequence.
+                                 
+                                 ---> KeyError: Raised when the specified key is not found in the dictionary.
+                                 
+                                 ---> NameError: Raised when an identifier is not found in the local or global namespace.
+                                 
+                                 ---> UnboundLocalError: Raised when trying to access a local variable in a function or method but no value has been assigned to it.
+                                 
+                                 ---> EnvironmentError: Base class for all exceptions that occur outside the Python environment.
+                                 
+                                 ---> IOError: Raised when an input/ output operation fails, such as the print statement or the open() function when trying to open                                                    file that does not exist.
+                                 
+                                 ---> IndentationError: Raised when indentation is not specified properly.
+                                 
+                                 ---> SyntaxError: Raised when the interpreter finds an internal problem, but when this error is encountered the Python interpreter                                                        does not exit.
+                                 
+                                 ---> SystemExit: Raised when the interpreter finds an internal problem, but when this error is encountered the Python interpreter does                                                   not exit.
+                                 
+                                 ---> TypeError: Raised when an operation or function is attempted that is invalid for the specified data type.
+                                 
+                                 ---> ValueError: Raised when the built-in function for a data type has the valid type of arguments, but the arguments have invalid                                                       values specified.
+                                 
+                                 ---> RuntimeError: Raised when a generated error does not fall into any category.
+                                 
+                                 ---> NotImplementedError: Raised when an abstract method that needs to be implemented in an inherited class is not actually                                                                      implemented.
+
+
+             ---> Try and Except Statement – Catching Exceptions
+                      ---> Syntax for general
+                                 try:
+                                            You do your operations here;
+                                             ......................
+                                 except ExceptionI:
+                                            If there is ExceptionI, then execute this block.
+                                 except ExceptionII:
+                                            If there is ExceptionII, then execute this block.
+                                            ......................
+                                 else:
+                                            If there is no exception then execute this block. 
+                     
+                      ---> Syntax for The except Clause with No Exceptions
+                                 try:
+                                            You do your operations here;
+                                            ......................
+                                 except:
+                                            If there is any exception, then execute this block.
+                                            ......................
+                                 else:
+                                            If there is no exception then execute this block. 
+                                            
+                       ---> Syntax for The except Clause with Multiple Exceptions   
+                                 try:
+                                            You do your operations here;
+                                            ......................
+                                 except(Exception1[, Exception2[,...ExceptionN]]]):
+                                             If there is any exception from the given exception list, 
+                                             then execute this block.
+                                            ......................
+                                 else:
+                                            If there is no exception then execute this block.
+                                            
+                        ---> Syntax for The try-finally Clause 
+                                 try:
+                                             You do your operations here;
+                                            ......................
+                                            Due to any exception, this may be skipped.
+                                 finally:
+                                            This would always be executed.
+                                            ......................
+                                            
+                         ---> Syntax for Argument of an Exception
+                                 try:
+                                            You do your operations here;
+                                            ......................
+                                 except ExceptionType, Argument:
+                                            You can print value of Argument here...
+                                            
+                         ---> Syntax for Raising an Exceptions 
+                                 raise [Exception [, args [, traceback]]]
