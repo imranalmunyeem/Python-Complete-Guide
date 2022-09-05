@@ -214,7 +214,14 @@
                       --> Classes are created by keyword class.
                       --> Attributes are the variables that belong to a class.
                       --> Attributes are always public and can be accessed using the dot (.) operator. Eg.: Myclass.Myattribute     
-               
+            
+            ---> Python Class Variables vs. Instance Variables:
+                      ---> Python class variables are declared within a class and their values are the same across all instances of a class. The value of instance variables can differ across each instance of a class.
+                      
+                      ---> Class variables can only be assigned when a class has been defined. Instance variables, on the other hand, can be assigned or changed at any time.
+                      
+                      ---> Both class variables and instance variables store a value in a program, just like any other Python variable.
+                      
             ---> Class Definition Syntax:
                       class ClassName:
                                  # Statement-1
