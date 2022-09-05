@@ -202,6 +202,7 @@
           ---> In Python, object-oriented Programming (OOPs) is a programming paradigm that uses objects and classes in programming. 
           ---> It aims to implement real-world entities like inheritance, polymorphisms, encapsulation, etc. in the programming.
           
+          
           ---> Main Concepts of Object-Oriented Programming:
                       Class
                       Objects
@@ -209,19 +210,20 @@
                       Encapsulation
                       Inheritance
                       Data Abstraction
-                      
+              
+              
            ---> Python class: 
                       --> Classes are created by keyword class.
                       --> Attributes are the variables that belong to a class.
                       --> Attributes are always public and can be accessed using the dot (.) operator. Eg.: Myclass.Myattribute     
             
+            
             ---> Python Class Variables vs. Instance Variables:
                       ---> Python class variables are declared within a class and their values are the same across all instances of a class. The value of instance variables can differ across each instance of a class.
-                      
                       ---> Class variables can only be assigned when a class has been defined. Instance variables, on the other hand, can be assigned or changed at any time.
-                      
                       ---> Both class variables and instance variables store a value in a program, just like any other Python variable.
-                      
+                 
+                 
             ---> Class Definition Syntax:
                       class ClassName:
                                  # Statement-1
@@ -230,6 +232,7 @@
                                  .
                                   # Statement-N  
             
+            
             ---> Self in Python class:
                       --> self represents the instance of the class. By using the “self”  we can access the attributes and methods of the class in python. 
                       --> It binds the attributes with the given arguments.
@@ -237,6 +240,7 @@
                                             ---> Class methods must have an extra first parameter in the method definition. We do not give a value for this parameter                                                    when we call the method, Python provides it
                                             ---> If we have a method that takes no arguments, then we still have to have one argument.
                                             ---> This is similar to this pointer in C++ and this reference in Java.  
+           
            
             ---> Constructor in python:
                       ---> Constructors are generally used for instantiating an object. 
@@ -253,7 +257,8 @@
                                  ---> Parameterized constructor:
                                             ---> Constructor with parameters is known as parameterized constructor. 
                                             ---> It takes its first argument as a reference to the instance being constructed known as self and the rest of the arguments are provided by the programmer.
-                                            
+               
+               
             ---> Python Object: The object is an entity that has a state and behavior associated with it.
                       ---> An object consists of :
                                  State: It is represented by the attributes of an object. It also reflects the properties of an object.
@@ -262,6 +267,7 @@
                       
                       ---> Object Syntax: 
                                  obj = Dog()
+             
              
             ---> Inheritance in Python:
                       ---> Inheritance is the capability of one class to derive or inherit the properties from another class.
@@ -277,16 +283,19 @@
 
                                  ---> Multiple Inheritance:
                                             Multiple level inheritance enables one derived class to inherit properties from more than one base class.
-                                            
+                
+                
              ---> Polymorphism in Python
                       ---> Polymorphism simply means having many forms. For example, we need to determine if the given species of birds fly or not, using polymorphism                            we can do this using a single function.
-                      
+                  
+                  
              ---> Encapsulation in Python
                       ---> It describes the idea of wrapping data and the methods that work on data within one unit. 
                       ---> This puts restrictions on accessing variables and methods directly and can prevent the accidental modification of data. 
                       ---> To prevent accidental change, an object’s variable can only be changed by an object’s method. 
                       ---> Those types of variables are known as private variables.
-                     
+                 
+                 
              ---> Data Abstraction in Python
                       ---> It hides the unnecessary code details from the user. 
                       ---> Also,  when we do not want to give out sensitive parts of our code implementation and this is where data abstraction came.
