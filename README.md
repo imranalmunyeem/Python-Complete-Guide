@@ -318,8 +318,50 @@
                       ---> Text files: In this type of file, Each line of text is terminated with a special character called EOL (End of Line), which is the new line character (‘\n’) in python by default.
                       
                       ---> Binary files: In this type of file, there is no terminator for a line, and the data is stored after converting it into machine-understandable binary language.
-              
-              
+                      
+              ---> File Access Modes:
+                      ---> Read Only (‘r’) : Open text file for reading. The handle is positioned at the beginning of the file. If the file does not exists, raises the I/O error. This is also the default mode in which a file is opened.
+                      
+                       ---> Read and Write (‘r+’): Open the file for reading and writing. The handle is positioned at the beginning of the file. Raises I/O error if the file does not exist.
+
+                       ---> Write Only (‘w’) : Open the file for writing. For the existing files, the data is truncated and over-written. The handle is positioned at the beginning of the file. Creates the file if the file does not exist.
+
+                       ---> Write and Read (‘w+’) : Open the file for reading and writing. For an existing file, data is truncated and over-written. The handle is positioned at the beginning of the file.
+
+                       ---> Append Only (‘a’): Open the file for writing. The file is created if it does not exist. The handle is positioned at the end of the file. The data being written will be inserted at the end, after the existing data.
+
+                       ---> Append and Read (‘a+’) : Open the file for reading and writing. The file is created if it does not exist. The handle is positioned at the end of the file. The data being written will be inserted at the end, after the existing data.
+                       
+               ---> Sytaxses:
+                      ---> Opening a File 
+                                 File_object = open(r"File_Name","Access_Mode")
+                                 
+                      ---> Closing a file 
+                                 file1 = open("MyFile.txt","a")
+                                 file1.close()
+                                 
+                      ---> Writing to a file
+                                 ---> There are two ways to write in a file:
+                                            ---> write() : Inserts the string str1 in a single line in the text file.
+                                                       ---> File_object.write(str1)
+                                                       
+                                            ---> writelines() : For a list of string elements, each string is inserted in the text file.Used to insert multiple strings at a single time.
+
+                                                       ---> File_object.writelines(L) for L = [str1, str2, str3] 
+                      
+                      ---> Reading from a file
+                                 ---> There are three ways to read data from a text file:
+                                            ---> read() : Returns the read bytes in form of a string. Reads n bytes, if no n specified, reads the entire file.
+                                                       ---> File_object.read([n])
+                                                       
+                                            ---> readline() : Reads a line of the file and returns in form of a string.For specified n, reads at most n bytes. However, does not reads more than one line, even if n exceeds the length of the line.
+                                                       ---> File_object.readline([n])
+                                                       
+                                            ---> readlines() : Reads all the lines and return them as each line a string element in a list.
+                                                       --->  File_object.readlines()
+                                            
+                      ---> Opening a File 
+                                 File_object = open(r"File_Name","Access_Mode")              
 ## Python Exception Handling
              ---> Exceptions: 
                       ---> Exceptions are raised when the program is syntactically correct, but the code resulted in an error. This error does not stop the execution                              of the program, however, it changes the normal flow of the program.
