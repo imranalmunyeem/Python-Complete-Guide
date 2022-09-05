@@ -231,9 +231,22 @@
                                             ---> If we have a method that takes no arguments, then we still have to have one argument.
                                             ---> This is similar to this pointer in C++ and this reference in Java.  
            
-            ---> init in Python:
-                      __init__ is one of the reserved methods in Python. In object oriented programming, it is known as a constructor. The __init__ method can be                             called when an object is created from the class, and access is required to initialize the attributes of the class.
-                      
+            ---> Constructor in python:
+                      ---> Constructors are generally used for instantiating an object. 
+                      ---> The task of constructors is to initialize(assign values) to the data members of the class when an object of the class is created.
+                      ---> In Python the __init__() method is called the constructor and is always called when an object is created.
+                      ---> Syntax of constructor declaration : 
+                                 def __init__(self):
+                                 # body of the constructor
+                      ---> Types of Constructor:
+                                 ---> Default constructor:
+                                            ---> simple constructor which doesn’t accept any arguments.
+                                            ---> Its definition has only one argument which is a reference to the instance being constructed.
+                                            
+                                 ---> Parameterized constructor:
+                                            ---> Constructor with parameters is known as parameterized constructor. 
+                                            ---> It takes its first argument as a reference to the instance being constructed known as self and the rest of the arguments are provided by the programmer.
+                                            
             ---> Python Object: The object is an entity that has a state and behavior associated with it.
                       ---> An object consists of :
                                  State: It is represented by the attributes of an object. It also reflects the properties of an object.
