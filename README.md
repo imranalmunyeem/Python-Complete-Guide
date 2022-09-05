@@ -35,6 +35,7 @@
                
                ---> Booleans: Logical values True or False
                
+               
 ## Naming convention in Python:   
            --->A variable name must start with a letter or the underscore character.
            
@@ -45,6 +46,7 @@
            ---> Variable names are case-sensitive (age, Age and AGE are three different variables).
            
            ---> You can't use reserve keywords.
+           
            
 ## Operator types in Python:   
            ---> Arithmetic operators
@@ -92,6 +94,7 @@
            
            ---> Bitwise operators
 
+
 ## Loop types in Python: 
            ---> For Loop
            ---> Here's the general format for a for loop in Python:
@@ -117,6 +120,7 @@
                       else:
                             print('All Done!')
  
+ 
 ## break, continue, pass in Python:  
            ---> break: Breaks out of the current closest enclosing loop.
            ---> continue: Goes to the top of the closest enclosing loop.
@@ -129,6 +133,7 @@
                                  if test: 
                                        continue 
                                  else:
+
 
 ## Methods in Python: 
            ---> Methods perform specific actions on an object and can also take arguments, just like a function.
@@ -146,6 +151,7 @@
            ---> Example: 
                       list = [1,2,3,4,5]
                       list.reverse()
+
 
 ## Function in Python: 
            ---> Function: 
@@ -183,8 +189,10 @@
                           print(f'Hello {name}')
                           greeting('Jose')
  
+ 
  ## What is the difference between return and print?
            ---> The return keyword allows you to actually save the result of the output of a function as a variable.The print() function simply displays the output to                 you, but doesn't save it for future use. 
+
 
  ## Some useful operatot in Python
            ---> Range Method: The range function allows you to quickly generate a list of integers.
@@ -197,6 +205,7 @@
           
           ---> Zip Method: Python zip() method takes iterable or containers and returns a single iterator object, having mapped values from all the containers. 
           ---> Syntax :  zip(*iterators) 
+
 
 ## Object-Oriented Programming in Python
           ---> In Python, object-oriented Programming (OOPs) is a programming paradigm that uses objects and classes in programming. 
@@ -300,7 +309,17 @@
                       ---> It hides the unnecessary code details from the user. 
                       ---> Also,  when we do not want to give out sensitive parts of our code implementation and this is where data abstraction came.
 
-        
+
+## Reading and Writing to text files in Python
+            ---> Python provides inbuilt functions for creating, writing, and reading files.
+            
+            ---> There are two types of files that can be handled in python, normal text files and binary files (written in binary language, 0s, and 1s).
+            
+                      ---> Text files: In this type of file, Each line of text is terminated with a special character called EOL (End of Line), which is the new line character (‘\n’) in python by default.
+                      
+                      ---> Binary files: In this type of file, there is no terminator for a line, and the data is stored after converting it into machine-understandable binary language.
+              
+              
 ## Python Exception Handling
              ---> Exceptions: 
                       ---> Exceptions are raised when the program is syntactically correct, but the code resulted in an error. This error does not stop the execution                              of the program, however, it changes the normal flow of the program.
